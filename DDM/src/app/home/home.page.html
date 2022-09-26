@@ -1,0 +1,22 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      CEP
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+
+<ion-content [fullscreen]="true">
+  <h1>Preencha o campo abaixo:</h1>
+  <ion-item>
+  <ion-label position="floating">Digite o seu CEP</ion-label>
+    <ion-input [(ngModel)]="cep"></ion-input>
+  </ion-item>
+  <ion-button expand="block" (click)="local()">Block</ion-button> <br><br>
+
+  <ion-label> Nome da rua: {{dados.logradouro}} </ion-label><br>
+  <ion-label> Bairro: {{dados.bairro}} </ion-label><br>
+  <ion-label> Cidade: {{dados.localidade}} </ion-label><br>
+  <ion-label> Estado: {{dados.uf}} </ion-label><br>
+</ion-content>
